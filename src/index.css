@@ -1,0 +1,259 @@
+/* File: src/index.css
+   Dark Glass Theme – Fixed: all text visible (no black text)
+*/
+
+:root{
+  --bg-1: #071428;
+  --bg-2: #0b2a4a;
+  --panel: rgba(255,255,255,0.03);
+  --glass-border: rgba(255,255,255,0.06);
+  --accent: #3b82f6;
+  --accent-2: #7c3aed;
+  --text: #f5f8ff;
+  --muted: rgba(230,238,248,0.75);
+}
+
+/* Reset & Base */
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family:'Poppins', system-ui, sans-serif;
+  background:linear-gradient(135deg,var(--bg-1) 0%,var(--bg-2) 100%);
+  color:var(--text);
+}
+
+/* Links */
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Navbar (glass) */
+.navbar-glass{
+  background:rgba(10,20,40,0.4);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.navbar-glass .navbar-brand{color:var(--text)!important;font-weight:700}
+.navbar-glass .nav-link{color:var(--muted)!important;margin-left:.6rem}
+.navbar-glass .nav-link:hover{color:var(--accent)!important}
+.navbar-glass .active-link{color:var(--accent)!important;font-weight:600}
+
+/* Hero */
+.hero{
+  min-height:86vh;
+  display:flex;
+  align-items:center;
+  padding-top:88px;
+}
+.hero-card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid var(--glass-border);
+  border-radius:16px;
+  padding:28px;
+  box-shadow:0 10px 40px rgba(2,6,23,0.55);
+  backdrop-filter:blur(10px);
+}
+.hero-title{
+  font-size:2.4rem;
+  font-weight:700;
+  margin-bottom:10px;
+  color:var(--text);
+}
+.hero-sub{
+  color:var(--muted);
+  line-height:1.6;
+}
+
+/* Buttons */
+.btn-glow{
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  border:none;
+  color:#fff!important;
+  border-radius:10px;
+  padding:10px 18px;
+  box-shadow:0 0 18px rgba(59,130,246,0.4);
+}
+.btn-outline-glow{
+  border:1px solid rgba(255,255,255,0.15);
+  color:var(--text)!important;
+  background:transparent;
+  border-radius:10px;
+  padding:9px 16px;
+}
+
+/* Sections & Panels */
+.section{padding:56px 0}
+.panel{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:12px;
+  padding:24px;
+  box-shadow:0 8px 30px rgba(2,6,23,0.55);
+  backdrop-filter:blur(10px);
+}
+.panel h2, .panel h5, .panel strong{color:var(--text)}
+.panel p, .panel li{color:var(--muted)}
+.panel a{color:var(--accent)}
+
+/* Skills */
+.skill-badge{
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.08);
+  margin:6px 6px 6px 0;
+  color:var(--text);
+  border:1px solid rgba(255,255,255,0.12);
+}
+
+/* Projects */
+.project-card{
+  transition:transform .3s ease,box-shadow .3s ease;
+}
+.project-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 60px rgba(0,0,0,0.5);
+}
+.project-title{color:var(--text);font-weight:600}
+.project-desc{color:var(--muted)}
+
+/* About */
+.about-text,.tools-text,.contact-line{color:var(--muted)}
+.tools-text{margin-top:10px}
+
+/* Avatar */
+.avatar-placeholder{
+  width:220px;
+  height:220px;
+  margin-left:auto;
+  border-radius:16px;
+  background:linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02));
+  border:1px solid rgba(255,255,255,0.08);
+  box-shadow:0 12px 40px rgba(2,6,23,0.6);
+}
+
+/* Contact Form */
+.form-control{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.15);
+  color:var(--text);
+  border-radius:10px;
+  padding:10px 12px;
+}
+.form-control::placeholder{color:rgba(230,238,248,0.5)}
+.form-control:focus{
+  border-color:var(--accent);
+  box-shadow:0 0 12px rgba(59,130,246,0.3);
+  background:rgba(255,255,255,0.1);
+}
+.form-label{color:var(--text)}
+
+/* Footer */
+.site-footer{
+  padding:24px 0;
+  text-align:center;
+  color:var(--muted);
+  border-top:1px solid rgba(255,255,255,0.06);
+}
+
+/* Responsive */
+@media (max-width:767px){
+  .hero-title{font-size:1.8rem}
+  .avatar-placeholder{display:none}
+}
+
+/* --------------------------
+   Skills (React Icons Version)
+--------------------------- */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+/* Skill Card */
+.skill-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.25s ease;
+  backdrop-filter: blur(8px);
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.10);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
+
+.skill-icon {font-size:30px;display:flex;align-items:center;justify-content:center}
+.skill-name {font-size:15px;font-weight:500;color:var(--text)}
+
+/* --------------------------------------------------
+   ⭐ DARK MODE BASE
+-------------------------------------------------- */
+.dark .card,
+.dark .panel {
+  background: rgba(255,255,255,0.05) !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
+  color: var(--text) !important;
+}
+
+/* --------------------------------------------------
+   ⭐ FULL LIGHT MODE – Soft Grey/Blue Background
+-------------------------------------------------- */
+
+.light {
+  --text: #0a0a0a;
+  --muted: #475569;
+
+  /* Soft gradient—same as intro section */
+  background: linear-gradient(135deg, #eef3f8 0%, #f5f7fa 100%) !important;
+  color: var(--text) !important;
+}
+
+.light body,
+.light .section {
+  background: transparent !important;
+}
+
+/* Light Mode Cards / Panels */
+.light .panel,
+.light .card {
+  background: #FFFFFF0D !important;
+  border: 1px solid rgba(0,0,0,0.07) !important;
+  color: #0a0a0a !important;
+}
+
+/* Contact Form */
+.light .form-control {
+  background: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #0a0a0a !important;
+}
+.light .form-control::placeholder { color: #94a3b8 !important; }
+.light .form-label { color: #0a0a0a !important; }
+
+/* Text */
+.light .contact-line,
+.light p,
+.light li {
+  color: #334155 !important;
+}
+
+/* Links */
+.light a { color: #2563eb !important; }
+
+/* Icons */
+.light svg { color: #1e3a8a !important; }
+
+/* Outline Button */
+.light .btn-outline-glow {
+  color: #0a0a0a !important;
+  border-color: #2563eb !important;
+}
