@@ -65,14 +65,14 @@ const Projects = () => (
                   ))}
                 </div>
 
-                <div className="d-flex gap-2 mt-3">
+                {/* <div className="d-flex gap-2 mt-3">
                   <Button size="sm" className="btn-glow" href={p.demo}>
                     Live Demo
                   </Button>
                   <Button size="sm" variant="outline-light" href={p.github}>
                     GitHub
                   </Button>
-                </div>
+                </div> */}
 
               </div>
             </Col>
