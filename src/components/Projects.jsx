@@ -2,6 +2,14 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
 const PROJECTS = [
+
+  {
+  title: "SIMS (Student Information Management System)",
+  desc: "Developed end-to-end UI modules for a large-scale government Student Information Management System. Built interactive dashboards, student data records, medical claims tracking, teacher & headmaster resource management, and attendance monitoring screens. Improved usability, optimized performance, and implemented reusable React components for better scalability.",
+  tech: ["react", "hicharts", "bootstrap", "material-ui"],
+  demo: "#",
+  github: "#",
+},
   {
     title: "Indian GOV (TCS)",
     desc: "Worked for Election Commission of India (ECI) including EPTBS, NGSP, and NVSP modules. Developed responsive UIs using React, Bootstrap, and Material UI for voter registration, EPIC cards, and data management.",
@@ -16,13 +24,7 @@ const PROJECTS = [
     demo: "#",
     github: "#",
   },
-  {
-    title: "SIMS",
-    desc: "Worked on interactive dashboards, input forms, and charts using HiCharts.",
-    tech: ["react", "hicharts", "bootstrap", "material-ui"],
-    demo: "#",
-    github: "#",
-  },
+  
   {
     title: "Food & Beverage Industry (TCS)",
     desc: "Developed responsive UIs using React and Material UI, integrating GenAI for product suggestions, ingredient details, and chat-based document extraction.",
