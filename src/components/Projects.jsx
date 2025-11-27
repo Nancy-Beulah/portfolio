@@ -11,14 +11,14 @@ const PROJECTS = [
   github: "#",
 },
   {
-    title: "Indian GOV (TCS)",
+    title: "Indian GOV",
     desc: "Worked for Election Commission of India (ECI) including EPTBS, NGSP, and NVSP modules. Developed responsive UIs using React, Bootstrap, and Material UI for voter registration, EPIC cards, and data management.",
     tech: ["react", "bootstrap", "material-ui"],
     demo: "#",
     github: "#",
   },
   {
-    title: "Insurance Domain (TCS)",
+    title: "Insurance Domain",
     desc: "Worked with Generali to create responsive UIs using Redux, ReactJS, and Material UI. Integrated a chat interface with GPT prompts for queries, including auto-complete and auto-suggest features.",
     tech: ["react", "material-ui", "redux"],
     demo: "#",
@@ -26,14 +26,14 @@ const PROJECTS = [
   },
   
   {
-    title: "Food & Beverage Industry (TCS)",
+    title: "Food & Beverage Industry",
     desc: "Developed responsive UIs using React and Material UI, integrating GenAI for product suggestions, ingredient details, and chat-based document extraction.",
     tech: ["react", "material-ui"],
     demo: "#",
     github: "#",
   },
   {
-    title: "Telecom Domain (TCS)",
+    title: "Telecom Domain",
     desc: "Worked on UI development using Angular, integrating Power BI reports and GPT-powered chat interfaces to enhance user functionality.",
     tech: ["react", "bootstrap", "material-ui"],
     demo: "#",
